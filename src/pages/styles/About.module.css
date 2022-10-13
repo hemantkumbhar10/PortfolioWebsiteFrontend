@@ -1,0 +1,24 @@
+.about{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+}
+
+.about h2{
+    font-family: 'heading', sans-serif;
+    color: var(--gold);
+    text-shadow: -1px 0 var(--gray), 0 1px var(--gray), 1px 0 var(--gray), 0 -1px var(--gray);
+    font-size: 3.5rem;
+    margin-bottom: 4vh;
+}
+
+@media screen and (max-width:619px){
+    .about h2{
+        font-size: 3rem;
+    }
+}

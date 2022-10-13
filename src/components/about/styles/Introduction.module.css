@@ -1,0 +1,234 @@
+.introduction{
+    position: relative;
+    width: 80%;
+    height: auto;
+    background-color: var(--purple);
+    border-radius: 3rem;
+    background-image: linear-gradient(rgba(248, 89, 251, 0.671) 0.5px, transparent 0.5px),
+    linear-gradient(to right, rgba(248, 89, 251, 0.671) 0.5px, var(--purple) 0.5px);
+    background-size: 46px 46px;
+}
+
+.intro{
+    width: 85%;
+    margin: auto;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+}
+
+.intro h3{
+    font-family: 'heading', sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: var(--white);
+    text-shadow: -1px 0 var(--gray), 0 1px var(--gray), 1px 0 var(--gray), 0 -1px var(--gray);
+
+}
+
+.intro p{
+    width: 60%;
+    margin-top: 3vh;
+    font-family: 'subhero', sans-serif;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--white);
+}
+
+.introP{
+    margin-left: 5vw;
+}
+
+.serious{
+    width: 100%;
+    margin-top: 8vh;
+    text-align: right;
+    margin-left: -10vw;
+}
+
+.seriousP{
+    margin-left: 20vw;
+}
+
+.personal{
+    margin-top: 8vh;
+    margin-left: 8vw;
+}
+
+.personalP{
+    margin-left: 12vw;
+}
+
+.notsure{
+    position: absolute;
+    width: 15vw;
+    transform: rotateZ(-20deg);
+    top: 2vh;
+    left: 40vw;
+}
+
+
+.idea{
+    position: absolute;
+    width: 15vw;
+    transform: rotateZ(20deg);
+    top: 20vh;
+    right: 10vw;
+}
+
+
+.peek{
+    position: absolute;
+    width: 13vw;
+    transform: rotateZ(20deg);
+    top: 60vh;
+    left: 10vw;
+}
+
+.killedit{
+    position: absolute;
+    width: 13vw;
+    transform: rotateZ(-10deg);
+    bottom: 35vh;
+    right: 10vw;
+}
+
+.puregold{
+    position: absolute;
+    width: 15vw;
+    bottom: 15vh;
+    left: 2vw;
+}
+
+
+@media screen and (max-width: 1452px) and (min-width: 961px) {
+    .notsure{
+        width: 20vw;
+        top: 1vh;
+        left: 55vw;
+    }
+    
+    
+    .idea{
+        width: 25vw;
+        top: 25vh;
+        right: 1vw;
+    }
+    
+    
+    .peek{
+        width: 14vw;
+        top: 80vh;
+        left: 3vw;
+    }
+    
+    .killedit{
+        width: 13vw;
+        bottom: 30vh;
+        right: 5vw;
+    }
+}
+
+
+@media screen and (max-width: 960px) and (min-width: 620px) {
+    
+    .intro h3{
+        font-size: 1.8rem;
+    }
+
+    .intro p{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .notsure{
+        width: 20vw;
+        top: 1vh;
+        left: 55vw;
+    }
+    
+    
+    .idea{
+        width: 25vw;
+        top: 25vh;
+        right: 1vw;
+    }
+    
+    
+    .peek{
+        width: 14vw;
+        top: 80vh;
+        left: 3vw;
+    }
+    
+    .killedit{
+        width: 13vw;
+        bottom: 30vh;
+        right: 5vw;
+    }
+
+}
+
+@media screen and (max-width:619px){
+    .introduction{
+        width: 95%;}
+
+    .intro{
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+    }
+
+    .intro h3{
+        font-size: 1.2rem;
+    }
+
+    .serious{
+        margin: 0;
+        margin-top: 3vh;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .intro p{
+        width: 90%;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .seriousP{
+        margin-left: 5vw;
+    }
+
+    .personal{
+        margin-top: 3vh;
+        margin-left: 0;
+    }    
+
+    .personalP{
+        margin-left: 5vw;
+    }
+
+    .notsure{
+        opacity: 0;
+    }
+    
+    
+    .idea{
+        opacity: 0;
+    }
+    
+    
+    .peek{
+       opacity: 0;
+    }
+    
+    .killedit{
+        opacity: 0;
+    }
+    
+    .puregold{
+        opacity: 0;
+    }
+    
+}

@@ -1,0 +1,64 @@
+:root{
+    --gray-light: #1b1d23;
+    --gray-dark: #131519;
+    --gray-darkest: #0d0f11;
+    --brand-coal: #0f0d0e;
+    --brand-charcoal: #231f20;
+    --brand-gray: #262522;
+    --brand-yellow: #fcba28;
+    --brand-pink: #f38ba3;
+    --brand-green: #0ba95b;
+    --brand-purple: #7b5ea7;
+    --brand-biege: #f9f4da;
+    --brand-blue: #12b5e5;
+    --brand-orange: #fc7428;
+    --brand-red: #ed203d;
+    --brand-white: #fff;
+    --red: var(--brand-red);
+    --white: var(--brand-biege);
+    --purple: var(--brand-purple);
+    --black: var(--brand-coal);
+    --blue: var(--brand-blue);
+    --pink: var(--brand-pink);
+    --gold: var(--brand-yellow);
+    --aqua: var(--brand-blue);
+    --gray: var(--brand-gray);
+    --yellow: var(--brand-yellow);
+    --green: var(--brand-green);
+}
+
+.app{
+    width: 100%;
+    height: auto;
+    background-color: var(--black);
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    cursor: url('./assets/svgs/defaultcursor.svg') 30 30, auto;
+}
+
+
+
+
+button{
+  cursor:  url('./assets/svgs/buttoncursor.svg') 30 30, auto;;
+}
+
+input:hover{
+  cursor:  url('./assets/svgs/buttoncursor.svg') 30 30, auto;;
+}
+
+select:hover{
+  cursor:  url('./assets/svgs/buttoncursor.svg') 30 30, auto;;
+}
+textarea:hover{
+  cursor:  url('./assets/svgs/buttoncursor.svg') 30 30, auto;;
+}
+
+option{
+  cursor:  url('./assets/svgs/buttoncursor.svg') 30 30, auto;;
+}
+
+a{
+  cursor:  url('./assets/svgs/buttoncursor.svg') 30 30, auto;;
+}

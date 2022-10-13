@@ -1,0 +1,165 @@
+.homepage{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:radial-gradient(4px 4px at 50% 50%, var(--brand-coal) 50%, transparent 50%) top / 40px 40px repeat, radial-gradient(8px 8px at 50% 50%, rgba(255,255,255,.1) 50%, transparent 50%) top / 40px 40px repeat;
+    padding-top: 13vh;
+}
+
+.homepage h1{
+    width: 100%;
+    font-family: 'heading', Helvetica, sans-serif;
+    color: var(--white);
+    font-size: 6rem;
+    text-shadow: -5px 0 var(--red), 0 1px var(--red), 1px 0 var(--red), 0 -1px var(--red);
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.homepage .intro{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 10vh auto 5vh auto;
+    padding: 6vh;
+    border-radius: 3rem;
+    text-align: justify;
+    line-height: 2rem;
+    font-family:'subhero', Helvetica, sans-serif;
+    color: var(--white);
+    font-size: 1.7rem;
+    background-color: var(--purple);
+}
+
+.intro button{
+    margin: 6vh auto 2vh auto;
+    font-family: subhero, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5vh 5vw;
+    border: 2px var(--black) solid;
+    border-radius: 2rem;
+    background-color: var(--gold);
+    box-shadow: 16px 6px 0px 0px var(--black);
+}
+
+.intro button:hover,
+.intro button:active{
+    animation: animateintrobutton 0.3s ease-in forwards;
+}
+
+.figurearrow{
+    position:absolute;
+    top: 35%;
+    left: 21%;
+    display: block;
+    width: 8vw;
+   
+}
+
+.figurearrow img{
+    width: 100%;
+    transform: rotateZ(303deg);
+    
+}
+
+.figuredeets{
+    position:absolute;
+    top: 60%;
+    right: 10%;
+    display: block;
+    width: 20vw;
+}
+
+.figuredeets img{
+    width: 100%;
+    
+}
+
+.drinks{
+    position:absolute;
+    top: 75%;
+    left: 25%;
+    display: block;
+    width: 14vw;
+}
+
+.drinks img{
+    width: 100%;
+    
+}
+
+@keyframes animateintrobutton{
+    to{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: 16px 6px 0px 0px rgba(255, 255, 255, 0);
+    }
+}
+
+
+
+@media screen and (max-width: 960px) and (min-width: 620px) {
+    .homepage h1{
+        font-size: 3.5rem;
+    }
+
+    .homepage .intro{
+        width: 60%;
+        font-size: 1.5rem;
+    }
+
+    .figurearrow{
+        top: 30%;
+        left: 5%;
+        width: 12vw;
+    }
+
+    .drinks{
+        top: 70%;
+        left: 10%;
+        width: 22vw;
+    }
+
+    .figuredeets{
+        width: 20vw;
+    }
+    
+}
+
+@media screen and (max-width:619px){
+    
+    .homepage h1{
+        font-size: 3rem;
+    }
+
+    .homepage .intro{
+        width: 80%;
+        font-size: 1rem;
+        padding: 4vh;
+    }
+
+
+    .figurearrow{
+        opacity: 0;
+    }
+
+    .drinks{
+        opacity: 1;
+        width: 30vw;
+        top: 85%;
+        left: 10%;
+    }
+
+    .figuredeets{
+        opacity: 1;
+        width: 30vw;
+        top: 65%;
+    right: 5%
+    
+    }
+
+}

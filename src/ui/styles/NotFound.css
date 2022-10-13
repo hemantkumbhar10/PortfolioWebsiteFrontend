@@ -1,0 +1,56 @@
+.NotFound{
+    position: relative;
+    width:100vw;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notfoundimg{
+    margin-top: -35vh;
+    position: relative;
+    width:55vw;
+    height: auto;
+
+}
+
+.notfoundimg img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.notfoundtitles{
+    position: absolute;
+    top: 55%;
+    width:30vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.notfoundtitles h1{
+    text-align: center;
+    font-family: 'heading', sans-serif;
+    color: var(--gold);
+}
+
+.notfoundtitles h4{
+    text-align: center;
+    font-family: 'subhero', sans-serif;
+    letter-spacing: 0.2rem;
+    color: var(--gold);
+    font-size: 1.5rem;
+}
+
+.notfoundtitles a{
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 3vw;
+    font-family: 'heading', sans-serif;
+    color: var(--purple);
+}

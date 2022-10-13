@@ -1,0 +1,10 @@
+.griddiv {
+  height: 50vh;
+  width: 90%;
+  border-radius: 0 200px 200px 0;
+  background-color: var(--white);
+  opacity: 1;
+  background-image: linear-gradient(rgb(224, 200, 79) 0.5px, transparent 0.5px),
+    linear-gradient(to right, rgb(224, 200, 79) 0.5px, var(--white) 0.5px);
+  background-size: 46px 46px;
+}

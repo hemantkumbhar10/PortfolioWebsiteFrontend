@@ -1,0 +1,244 @@
+.contact{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    background:radial-gradient(4px 4px at 50% 50%, var(--brand-coal) 50%, transparent 50%) top / 40px 40px repeat, radial-gradient(8px 8px at 50% 50%, rgba(255,255,255,.1) 50%, transparent 50%) top / 40px 40px repeat;
+    padding-bottom: 15vh;
+}
+
+.contact h2{
+    font-family: 'heading', sans-serif;
+    color: var(--gold);
+    text-shadow: -1px 0 var(--gray), 0 1px var(--gray), 1px 0 var(--gray), 0 -1px var(--gray);
+    font-size: 3.5rem;
+    margin-bottom: 9vh;
+    text-align: center;
+}
+
+.resume{
+    width: 20%;
+    margin: auto;
+}
+
+.resume h3{
+    font-family: 'heading', sans-serif;
+    color: var(--white);
+    text-shadow: -1px 0 var(--gray), 0 1px var(--gray), 1px 0 var(--gray), 0 -1px var(--gray);
+    font-size: 2rem;
+    margin-bottom: 4vh;
+    text-align: center;
+}
+
+
+.resume button{
+    margin: 4vh auto 6vh auto;
+    font-family: 'subhero', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5vh 5vw;
+    border: 2px var(--black) solid;
+    border-radius: 2rem;
+    background-color: var(--gold);
+    box-shadow: 16px 6px 0px 0px var(--purple);
+    cursor: pointer;
+  }
+  
+  
+  .resume button:hover,
+  .resume button:active {
+    animation: animatemailbutton 0.3s ease-in forwards;
+  }
+
+
+
+  @keyframes animatemailbutton{
+    to{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: 16px 6px 0px 0px rgba(255, 255, 255, 0);
+    }
+}
+
+.socialherotitle{
+    font-family: 'heading', sans-serif;
+    color: var(--white);
+    text-shadow: -1px 0 var(--gray), 0 1px var(--gray), 1px 0 var(--gray), 0 -1px var(--gray);
+    font-size: 2rem;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+.socials{
+    width: 25%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.socials a{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border:2px var(--gold) solid;
+    background-color:var(--purple);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow:-5px 2px 0px 3px var(--gold);
+    margin: 2vh;
+    margin-bottom: 8vh;
+}
+
+.socials a img{
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.hemantslogo{
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    margin-bottom: 3vh;
+}
+
+.hemantslogo img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.contact h6{
+    font-family: 'subhero', sans-serif;
+    color: var(--gold);
+    text-shadow: -1px 0 var(--gray), 0 1px var(--gray), 1px 0 var(--gray), 0 -1px var(--gray);
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+    line-height: 1.4rem;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 960px) and (min-width: 620px) {
+
+    .contact{
+        margin-top: 5vh;
+        padding-bottom: 10vh;
+    }
+
+    .contact h2{
+        font-size: 3rem;
+        margin-bottom: 9vh;
+    }
+
+    .resume{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resume h3{
+        font-size: 1.5rem;
+    }
+
+    .resume button{
+        margin: auto;
+      }
+
+    .socialherotitle{
+        margin-top: 5vh;
+        font-size: 1.5rem;
+        margin-bottom: 3vh;
+    }
+
+    .socials{
+        width: 50%;
+    }
+
+    .socials a{
+        width: 40px;
+        height: 40px;
+        border:1px var(--gold) solid;
+        box-shadow:-4px 0px 0px 0px var(--gold);
+    }
+
+
+    .contact h6{
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+    }
+    
+      
+}
+
+
+
+
+
+@media screen and (max-width:619px){
+    .contact{
+        margin-top: 15vh;
+        padding-bottom: 10vh;
+    }
+
+    .contact h2{
+        font-size: 3rem;
+        margin-bottom: 9vh;
+    }
+
+    .resume{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .resume h3{
+        font-size: 1.5rem;
+        margin-bottom: 1vh
+    }
+
+    .resume button{
+        margin: 4vh auto 0 auto;
+      }
+
+      .socialherotitle{
+        margin-top: 5vh;
+        font-size: 1.5rem;
+        margin-bottom: 3vh;
+    }
+
+    .socials{
+        width: 70%;
+    }
+
+    .socials a{
+        width: 40px;
+        height: 40px;
+        border:1px var(--gold) solid;
+        box-shadow:-4px 0px 0px 0px var(--gold);
+    }
+
+    .hemantslogo{
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .contact h6{
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+    }
+}

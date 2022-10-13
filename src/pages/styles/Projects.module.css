@@ -1,0 +1,30 @@
+.projects{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    background:radial-gradient(4px 4px at 50% 50%, var(--brand-coal) 50%, transparent 50%) top / 40px 40px repeat, radial-gradient(8px 8px at 50% 50%, rgba(255,255,255,.1) 50%, transparent 50%) top / 40px 40px repeat;
+}
+
+.projects h2{
+    font-family: 'heading', sans-serif;
+    color: var(--gold);
+    text-shadow: -1px 0 var(--gray), 0 1px var(--gray), 1px 0 var(--gray), 0 -1px var(--gray);
+    font-size: 3.5rem;
+    margin-bottom: 4vh;
+    text-align: center;
+}
+
+.projectcards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width:619px){
+    .projects h2{
+        font-size: 3rem;
+    }
+}

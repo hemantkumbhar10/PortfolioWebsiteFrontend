@@ -1,0 +1,125 @@
+.experience{
+    width: 70%;
+    height: auto;
+    background-color: var(--white);
+    border-radius: 3rem;
+    margin-top: 5vh;
+    background-image: linear-gradient(rgba(224, 200, 79, 0.485) 0.5px, transparent 0.5px),
+    linear-gradient(to right, rgba(224, 200, 79, 0.485) 0.5px, var(--white) 0.5px);
+    background-size: 46px 46px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+    /* justify-content: center; */
+}
+
+.experience h3{
+    font-family: 'heading', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 4vh;
+    color: var(--red);
+    text-shadow: -1px 0 var(--gray), 0 1px var(--gray), 1px 0 var(--gray), 0 -1px var(--gray);
+    
+}
+
+.company{
+    margin: auto;
+    margin-top: 5vh;
+    width: 60%;
+}
+
+.company h4{
+    font-family: 'subhero', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--green);
+    margin-bottom:2vh;
+}
+
+.company h6{
+    font-family: 'subhero', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--red);
+}
+
+.company ul{
+    margin: 3vh;
+}
+
+.company ul li{
+    font-family: 'subhero', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 2rem;
+    color: var(--black);
+    list-style-type: circle;
+}
+
+.showMoreExButton{
+    position: relative;
+    margin:auto;
+    margin-bottom:4vh ;
+    left: auto;
+    font-family: subhero, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.5vh 5vw;
+    border: 2px var(--black) solid;
+    border-radius: 2rem;
+    background-color: var(--gold);
+    box-shadow: 16px 6px 0px 0px var(--black);
+}
+
+.showMoreExButton:hover,
+.showMoreExButton:active{
+    animation: animateintrogbutton 0.3s ease-in forwards;
+}
+
+
+@keyframes animateintrogbutton{
+    to{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: 16px 6px 0px 0px rgba(255, 255, 255, 0);
+    }
+}
+
+
+@media screen and (max-width: 960px) and (min-width: 620px) {
+    .experience h3{
+        font-size: 1.8rem;
+    }
+
+    .company{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:619px){
+    .experience{
+        width: 95%;}
+    .experience h3{
+        font-size: 1.8rem;
+    }
+
+    .company{
+        width: 90%;
+    }
+
+    .company h4{
+        font-size: 1.6rem;
+    }
+    
+    .company h6{
+        font-size: 1.2rem;
+    }
+
+    .company ul li{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
