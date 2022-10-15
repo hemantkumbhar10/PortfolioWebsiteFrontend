@@ -248,4 +248,10 @@
     .loadingscreen h3{
         font-size: 4vw;
     }
+
+	.container {
+		width: 280px;
+	   height: 400px;
+	   margin-top: 15vh;
+	}
 }
