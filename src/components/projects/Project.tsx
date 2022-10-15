@@ -16,7 +16,11 @@ interface Projecttypes {
   description: string;
 }
 
-const Project = () => {
+interface isProjectLoadingType{
+  isProjectsLoaded:()=>void
+}
+
+const Project = ({isProjectsLoaded}:isProjectLoadingType) => {
   const [allProjects, setAllProjects] = useState<Projecttypes[]>([]);
 
   const [showmoreP, setShowMoreP] = useState<boolean>(false);
@@ -46,8 +50,10 @@ const Project = () => {
                 "The React app which helps you find different cooking incredients. Uses Edamam API to fetch the data and extracts.",
             },
           ]);
-        }
+        }else{
         setAllProjects(data);
+        isProjectsLoaded()
+      }
       } catch (err) {
         setAllProjects([
           {
@@ -63,7 +69,7 @@ const Project = () => {
         ]);
       }
     })();
-  }, []);
+  }, [isProjectsLoaded]);
 
 
   const projectsArryaData = !showmoreP ? showlessP : allProjects;

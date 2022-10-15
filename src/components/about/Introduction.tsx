@@ -10,7 +10,13 @@ import peek from "../../assets/svgs/peek.svg";
 import killedit from "../../assets/svgs/killedit.svg";
 import puregold from "../../assets/svgs/puregold.svg";
 
-const Introduction = () => {
+
+interface introType{
+  isIntroLoaded: ()=>void
+}
+
+
+const Introduction = ({isIntroLoaded}:introType) => {
   const [allIntros, setAllIntros] = useState<{
     intro_paragraph: string;
     serious_paragraph: string;
@@ -35,11 +41,13 @@ const Introduction = () => {
             personal_paragraph: errorMessage,
           });
         }
+        else{
         setAllIntros({
               intro_paragraph: data[0]?.intro,
               serious_paragraph: data[0]?.technical,
               personal_paragraph: data[0]?.personal,
             })
+            isIntroLoaded();}
       } catch (err) {
         setAllIntros({
           intro_paragraph: errorMessage,
@@ -48,7 +56,7 @@ const Introduction = () => {
         });
       }
     })();
-  }, []);
+  }, [isIntroLoaded]);
 
 
   return (
