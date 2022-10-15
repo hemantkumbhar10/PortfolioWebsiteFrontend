@@ -75,3 +75,8 @@ h2, h3, h4{
 	font-family: 'subhero';
 	src: url('./assets/fonts/ShadowsIntoLight.ttf');
 }
+
+
+html::-webkit-scrollbar{
+    display: none;
+}
