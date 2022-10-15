@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import classes from "./App.module.css";
 import "./pages/styles/contactdiv.css";
@@ -15,6 +15,7 @@ import NotFound from "./ui/NotFound";
 function App() {
   const [isIntro, setIsIntro] = useState<boolean>(false);
   const [isProjects, setIsProjects] = useState<boolean>(false);
+  const [isLoaded, setIsLoaded] = useState<boolean>(false);
 
 
   const isIntroLoaded = () => {
@@ -24,6 +25,27 @@ function App() {
   const isProjectsLoaded = () => {
     setIsProjects(true);
   };
+
+  // const isLoadedHandler = ()=>{
+  //   if(isIntro && isProjects){
+  //     setIsLoaded(true);
+  //   }
+  // }
+
+  useEffect(() => {
+
+    let timer = setTimeout(()=>{
+    if(isIntro && isProjects){
+      setIsLoaded(true);
+    }
+  }, 3000);
+
+  return ()=>{
+    clearTimeout(timer);
+  }
+
+  }, [isIntro,isProjects])
+  
 
   return (
     <div className={classes.app}>
@@ -43,7 +65,7 @@ function App() {
         ></Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <LoadingPage displayProperty={(isIntro && isProjects) ? 'none' : 'block' } />
+      <LoadingPage displayProperty={(isLoaded) ? 'none' : 'block' } />
     </div>
   );
 }
